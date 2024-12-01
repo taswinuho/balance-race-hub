@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Riders from "./pages/Riders";
 import Rankings from "./pages/Rankings";
+import Events from "./pages/Events";
 
 // Create a client
 const queryClient = new QueryClient({
@@ -28,6 +29,7 @@ function App() {
             <Route path="/" element={<Index />} />
             <Route path="/riders" element={<Riders />} />
             <Route path="/rankings" element={<Rankings />} />
+            <Route path="/events" element={<Events />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
